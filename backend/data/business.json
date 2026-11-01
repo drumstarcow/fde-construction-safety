@@ -1,0 +1,1515 @@
+[
+  {
+    "business_id": "CS-0001",
+    "title": "楼梯口防护栏杆缺失",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "A3",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0001",
+      "P-0002"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0002",
+    "title": "配电箱未上锁",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "A1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0003"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0003",
+    "title": "脚手架连墙件缺失",
+    "event_time": "2026-10-12T08:10:00",
+    "area_code": "B1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0004"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0004",
+    "title": "脚手架连墙件缺失",
+    "event_time": "2026-10-12T08:12:00",
+    "area_code": "B1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0005"
+    ],
+    "alt_versions": [],
+    "flags": [
+      "dup_group:G1"
+    ]
+  },
+  {
+    "business_id": "CS-0005",
+    "title": "安全网破损",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "A3",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0006"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0006",
+    "title": "未戴安全帽",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "A1",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0007"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0007",
+    "title": "电梯井洞口防护不到位",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "C2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0011",
+      "P-0012"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0008",
+    "title": "动火作业无监护",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "A2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0013"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0009",
+    "title": "临边防护缺失",
+    "event_time": "2026-10-13T10:00:00",
+    "area_code": "B2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0016"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0010",
+    "title": "临边防护缺失",
+    "event_time": "2026-10-13T10:05:00",
+    "area_code": "B2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0017"
+    ],
+    "alt_versions": [],
+    "flags": [
+      "dup_group:G2"
+    ]
+  },
+  {
+    "business_id": "CS-0011",
+    "title": "临边防护缺失",
+    "event_time": "2026-10-13T10:09:00",
+    "area_code": "B2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0018"
+    ],
+    "alt_versions": [],
+    "flags": [
+      "dup_group:G2"
+    ]
+  },
+  {
+    "business_id": "CS-0012",
+    "title": "物料提升机无限位",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "B3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0019"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0013",
+    "title": "消防通道堆放材料",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "A2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0021"
+    ],
+    "alt_versions": [
+      {
+        "version": "v2",
+        "status": "已销项"
+      }
+    ],
+    "flags": [
+      "version_conflict"
+    ]
+  },
+  {
+    "business_id": "CS-0014",
+    "title": "塔吊基础积水",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "A4",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0022"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0015",
+    "title": "模板支撑立杆间距超标",
+    "event_time": "2026-10-14T11:00:00",
+    "area_code": "C1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0026"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0016",
+    "title": "模板支撑立杆间距超标",
+    "event_time": "2026-10-14T11:03:00",
+    "area_code": "C1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0027"
+    ],
+    "alt_versions": [],
+    "flags": [
+      "dup_group:G3"
+    ]
+  },
+  {
+    "business_id": "CS-0017",
+    "title": "氧气乙炔间距不足",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "B3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0028"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0018",
+    "title": "深基坑边坡无监测",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "C3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0029"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0019",
+    "title": "外架密目网缺失",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "A4",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0030"
+    ],
+    "alt_versions": [
+      {
+        "version": "v1",
+        "status": "已销项"
+      }
+    ],
+    "flags": [
+      "version_conflict"
+    ]
+  },
+  {
+    "business_id": "CS-0020",
+    "title": "临边防护上午补装下午拆除",
+    "event_time": "2026-10-15T09:20:00",
+    "area_code": "B2",
+    "level": "中",
+    "status": "销项失效",
+    "version": "v3",
+    "photo_ids": [
+      "P-0031",
+      "P-0032"
+    ],
+    "alt_versions": [],
+    "flags": [
+      "status_flip"
+    ]
+  },
+  {
+    "business_id": "CS-0021",
+    "title": "电梯井防护门缺失",
+    "event_time": "2026-10-16T09:20:00",
+    "area_code": "A2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0041",
+      "P-0042"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0022",
+    "title": "消防水管违规接管",
+    "event_time": "2026-10-22T09:20:00",
+    "area_code": "A1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0043"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0023",
+    "title": "消防水管违规接管",
+    "event_time": "2026-10-22T09:20:00",
+    "area_code": "A1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0044"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0024",
+    "title": "消防通道堆放材料（复核）",
+    "event_time": "2026-10-19T09:20:00",
+    "area_code": "B1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0045"
+    ],
+    "alt_versions": [
+      {
+        "version": "v2",
+        "status": "已销项"
+      }
+    ],
+    "flags": [
+      "version_conflict"
+    ]
+  },
+  {
+    "business_id": "CS-0025",
+    "title": "临边防护反复",
+    "event_time": "2026-10-20T09:20:00",
+    "area_code": "B2",
+    "level": "中",
+    "status": "销项失效",
+    "version": "v3",
+    "photo_ids": [
+      "P-0046",
+      "P-0047"
+    ],
+    "alt_versions": [],
+    "flags": [
+      "status_flip"
+    ]
+  },
+  {
+    "business_id": "CS-0026",
+    "title": "焊接火花飞溅（B3）",
+    "event_time": "2026-10-21T09:20:00",
+    "area_code": "B3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0048",
+      "P-0049"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0027",
+    "title": "物料提升机无限位（C1）",
+    "event_time": "2026-10-22T09:20:00",
+    "area_code": "C1",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0050",
+      "P-0051"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0028",
+    "title": "塔吊基础积水（C2）",
+    "event_time": "2026-10-23T09:20:00",
+    "area_code": "C2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0052",
+      "P-0053"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0029",
+    "title": "深基坑边坡无监测（C3）",
+    "event_time": "2026-10-24T09:20:00",
+    "area_code": "C3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0054",
+      "P-0055"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0030",
+    "title": "氧气乙炔间距不足（A1）",
+    "event_time": "2026-10-25T09:20:00",
+    "area_code": "A1",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0056",
+      "P-0057"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0031",
+    "title": "外架密目网缺失（A2）",
+    "event_time": "2026-10-26T09:20:00",
+    "area_code": "A2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0058",
+      "P-0059"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0032",
+    "title": "消防器材失效（A3）",
+    "event_time": "2026-10-27T09:20:00",
+    "area_code": "A3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0060",
+      "P-0061"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0033",
+    "title": "洞口未覆盖（A4）",
+    "event_time": "2026-10-28T09:20:00",
+    "area_code": "A4",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0062",
+      "P-0063"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0034",
+    "title": "脚手架脚手板未满铺（B1）",
+    "event_time": "2026-10-29T09:20:00",
+    "area_code": "B1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0064",
+      "P-0065"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0035",
+    "title": "高处作业未系安全带（B2）",
+    "event_time": "2026-10-30T09:20:00",
+    "area_code": "B2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0066",
+      "P-0067"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0036",
+    "title": "临电电缆拖地（B3）",
+    "event_time": "2026-10-31T09:20:00",
+    "area_code": "B3",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0068",
+      "P-0069"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0037",
+    "title": "气瓶无防倾倒（C1）",
+    "event_time": "2026-11-01T09:20:00",
+    "area_code": "C1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0070",
+      "P-0071"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0038",
+    "title": "吊装无警戒区（C2）",
+    "event_time": "2026-11-02T09:20:00",
+    "area_code": "C2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0072",
+      "P-0073"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0039",
+    "title": "施工升降机超载（C3）",
+    "event_time": "2026-11-03T09:20:00",
+    "area_code": "C3",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0074",
+      "P-0075"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0040",
+    "title": "楼梯口防护栏杆缺失（A1）",
+    "event_time": "2026-11-04T09:20:00",
+    "area_code": "A1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0076",
+      "P-0077"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0041",
+    "title": "配电箱未上锁（A2）",
+    "event_time": "2026-11-05T09:20:00",
+    "area_code": "A2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0078",
+      "P-0079"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0042",
+    "title": "安全网破损（A3）",
+    "event_time": "2026-11-06T09:20:00",
+    "area_code": "A3",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0080",
+      "P-0081"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0043",
+    "title": "未戴安全帽（A4）",
+    "event_time": "2026-11-07T09:20:00",
+    "area_code": "A4",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0082",
+      "P-0083"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0044",
+    "title": "动火作业无监护（B1）",
+    "event_time": "2026-11-08T09:20:00",
+    "area_code": "B1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0084",
+      "P-0085"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0045",
+    "title": "临时用电私拉乱接（B2）",
+    "event_time": "2026-11-09T09:20:00",
+    "area_code": "B2",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0086",
+      "P-0087"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0046",
+    "title": "焊接火花飞溅（B3）",
+    "event_time": "2026-11-10T09:20:00",
+    "area_code": "B3",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0088",
+      "P-0089"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0047",
+    "title": "物料提升机无限位（C1）",
+    "event_time": "2026-11-11T09:20:00",
+    "area_code": "C1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0090",
+      "P-0091"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0048",
+    "title": "塔吊基础积水（C2）",
+    "event_time": "2026-11-12T09:20:00",
+    "area_code": "C2",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0092",
+      "P-0093"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0049",
+    "title": "深基坑边坡无监测（C3）",
+    "event_time": "2026-11-13T09:20:00",
+    "area_code": "C3",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0094",
+      "P-0095"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0050",
+    "title": "氧气乙炔间距不足（A1）",
+    "event_time": "2026-11-14T09:20:00",
+    "area_code": "A1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0096",
+      "P-0097"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0051",
+    "title": "外架密目网缺失（A2）",
+    "event_time": "2026-11-15T09:20:00",
+    "area_code": "A2",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0098",
+      "P-0099"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0052",
+    "title": "消防器材失效（A3）",
+    "event_time": "2026-11-16T09:20:00",
+    "area_code": "A3",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0100",
+      "P-0101"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0053",
+    "title": "洞口未覆盖（A4）",
+    "event_time": "2026-11-17T09:20:00",
+    "area_code": "A4",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0102",
+      "P-0103"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0054",
+    "title": "脚手架脚手板未满铺（B1）",
+    "event_time": "2026-11-18T09:20:00",
+    "area_code": "B1",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0104",
+      "P-0105"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0055",
+    "title": "高处作业未系安全带（B2）",
+    "event_time": "2026-11-19T09:20:00",
+    "area_code": "B2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0106",
+      "P-0107"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0056",
+    "title": "临电电缆拖地（B3）",
+    "event_time": "2026-11-20T09:20:00",
+    "area_code": "B3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0108",
+      "P-0109"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0057",
+    "title": "气瓶无防倾倒（C1）",
+    "event_time": "2026-11-21T09:20:00",
+    "area_code": "C1",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0110",
+      "P-0111"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0058",
+    "title": "吊装无警戒区（C2）",
+    "event_time": "2026-11-22T09:20:00",
+    "area_code": "C2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0112",
+      "P-0113"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0059",
+    "title": "施工升降机超载（C3）",
+    "event_time": "2026-11-23T09:20:00",
+    "area_code": "C3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0114",
+      "P-0115"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0060",
+    "title": "楼梯口防护栏杆缺失（A1）",
+    "event_time": "2026-11-24T09:20:00",
+    "area_code": "A1",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0116",
+      "P-0117"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0061",
+    "title": "配电箱未上锁（A2）",
+    "event_time": "2026-11-25T09:20:00",
+    "area_code": "A2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0118",
+      "P-0119"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0062",
+    "title": "安全网破损（A3）",
+    "event_time": "2026-11-26T09:20:00",
+    "area_code": "A3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0120",
+      "P-0121"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0063",
+    "title": "未戴安全帽（A4）",
+    "event_time": "2026-11-27T09:20:00",
+    "area_code": "A4",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0122",
+      "P-0123"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0064",
+    "title": "动火作业无监护（B1）",
+    "event_time": "2026-11-28T09:20:00",
+    "area_code": "B1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0124",
+      "P-0125"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0065",
+    "title": "临时用电私拉乱接（B2）",
+    "event_time": "2026-11-29T09:20:00",
+    "area_code": "B2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0126",
+      "P-0127"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0066",
+    "title": "焊接火花飞溅（B3）",
+    "event_time": "2026-11-30T09:20:00",
+    "area_code": "B3",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0128",
+      "P-0129"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0067",
+    "title": "物料提升机无限位（C1）",
+    "event_time": "2026-12-01T09:20:00",
+    "area_code": "C1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0130",
+      "P-0131"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0068",
+    "title": "塔吊基础积水（C2）",
+    "event_time": "2026-12-02T09:20:00",
+    "area_code": "C2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0132",
+      "P-0133"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0069",
+    "title": "深基坑边坡无监测（C3）",
+    "event_time": "2026-12-03T09:20:00",
+    "area_code": "C3",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0134",
+      "P-0135"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0070",
+    "title": "氧气乙炔间距不足（A1）",
+    "event_time": "2026-12-04T09:20:00",
+    "area_code": "A1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0136",
+      "P-0137"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0071",
+    "title": "外架密目网缺失（A2）",
+    "event_time": "2026-12-05T09:20:00",
+    "area_code": "A2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0138",
+      "P-0139"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0072",
+    "title": "消防器材失效（A3）",
+    "event_time": "2026-12-06T09:20:00",
+    "area_code": "A3",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0140",
+      "P-0141"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0073",
+    "title": "洞口未覆盖（A4）",
+    "event_time": "2026-12-07T09:20:00",
+    "area_code": "A4",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0142",
+      "P-0143"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0074",
+    "title": "脚手架脚手板未满铺（B1）",
+    "event_time": "2026-12-08T09:20:00",
+    "area_code": "B1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0144",
+      "P-0145"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0075",
+    "title": "高处作业未系安全带（B2）",
+    "event_time": "2026-12-09T09:20:00",
+    "area_code": "B2",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0146",
+      "P-0147"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0076",
+    "title": "临电电缆拖地（B3）",
+    "event_time": "2026-12-10T09:20:00",
+    "area_code": "B3",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0148",
+      "P-0149"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0077",
+    "title": "气瓶无防倾倒（C1）",
+    "event_time": "2026-12-11T09:20:00",
+    "area_code": "C1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0150",
+      "P-0151"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0078",
+    "title": "吊装无警戒区（C2）",
+    "event_time": "2026-12-12T09:20:00",
+    "area_code": "C2",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0152",
+      "P-0153"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0079",
+    "title": "施工升降机超载（C3）",
+    "event_time": "2026-12-13T09:20:00",
+    "area_code": "C3",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0154",
+      "P-0155"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0080",
+    "title": "楼梯口防护栏杆缺失（A1）",
+    "event_time": "2026-12-14T09:20:00",
+    "area_code": "A1",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0156",
+      "P-0157"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0081",
+    "title": "配电箱未上锁（A2）",
+    "event_time": "2026-12-15T09:20:00",
+    "area_code": "A2",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0158",
+      "P-0159"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0082",
+    "title": "安全网破损（A3）",
+    "event_time": "2026-12-16T09:20:00",
+    "area_code": "A3",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0160",
+      "P-0161"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0083",
+    "title": "未戴安全帽（A4）",
+    "event_time": "2026-12-17T09:20:00",
+    "area_code": "A4",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0162",
+      "P-0163"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0084",
+    "title": "动火作业无监护（B1）",
+    "event_time": "2026-12-18T09:20:00",
+    "area_code": "B1",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0164",
+      "P-0165"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0085",
+    "title": "临时用电私拉乱接（B2）",
+    "event_time": "2026-12-19T09:20:00",
+    "area_code": "B2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0166",
+      "P-0167"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0086",
+    "title": "焊接火花飞溅（B3）",
+    "event_time": "2026-12-20T09:20:00",
+    "area_code": "B3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0168",
+      "P-0169"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0087",
+    "title": "物料提升机无限位（C1）",
+    "event_time": "2026-12-21T09:20:00",
+    "area_code": "C1",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0170",
+      "P-0171"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0088",
+    "title": "塔吊基础积水（C2）",
+    "event_time": "2026-12-22T09:20:00",
+    "area_code": "C2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0172",
+      "P-0173"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0089",
+    "title": "深基坑边坡无监测（C3）",
+    "event_time": "2026-12-23T09:20:00",
+    "area_code": "C3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0174",
+      "P-0175"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0090",
+    "title": "氧气乙炔间距不足（A1）",
+    "event_time": "2026-12-24T09:20:00",
+    "area_code": "A1",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0176",
+      "P-0177"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0091",
+    "title": "外架密目网缺失（A2）",
+    "event_time": "2026-12-25T09:20:00",
+    "area_code": "A2",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0178",
+      "P-0179"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0092",
+    "title": "消防器材失效（A3）",
+    "event_time": "2026-12-26T09:20:00",
+    "area_code": "A3",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0180",
+      "P-0181"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0093",
+    "title": "洞口未覆盖（A4）",
+    "event_time": "2026-12-27T09:20:00",
+    "area_code": "A4",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0182",
+      "P-0183"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0094",
+    "title": "脚手架脚手板未满铺（B1）",
+    "event_time": "2026-12-28T09:20:00",
+    "area_code": "B1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0184",
+      "P-0185"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0095",
+    "title": "高处作业未系安全带（B2）",
+    "event_time": "2026-12-29T09:20:00",
+    "area_code": "B2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0186",
+      "P-0187"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0096",
+    "title": "临电电缆拖地（B3）",
+    "event_time": "2026-12-30T09:20:00",
+    "area_code": "B3",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0188",
+      "P-0189"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0097",
+    "title": "气瓶无防倾倒（C1）",
+    "event_time": "2026-12-31T09:20:00",
+    "area_code": "C1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0190",
+      "P-0191"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0098",
+    "title": "吊装无警戒区（C2）",
+    "event_time": "2027-01-01T09:20:00",
+    "area_code": "C2",
+    "level": "高",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0192",
+      "P-0193"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0099",
+    "title": "施工升降机超载（C3）",
+    "event_time": "2027-01-02T09:20:00",
+    "area_code": "C3",
+    "level": "低",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0194",
+      "P-0195"
+    ],
+    "alt_versions": [],
+    "flags": []
+  },
+  {
+    "business_id": "CS-0100",
+    "title": "楼梯口防护栏杆缺失（A1）",
+    "event_time": "2027-01-03T09:20:00",
+    "area_code": "A1",
+    "level": "中",
+    "status": "整改中",
+    "version": "v3",
+    "photo_ids": [
+      "P-0196",
+      "P-0197"
+    ],
+    "alt_versions": [],
+    "flags": []
+  }
+]

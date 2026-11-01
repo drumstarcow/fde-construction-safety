@@ -1,0 +1,46 @@
+[
+  {
+    "action": "verify_version",
+    "actor": "system",
+    "rule_hit": "ok",
+    "model_suggestion": "",
+    "human_override": "",
+    "signer": "",
+    "business_id": "CS-0002",
+    "detail": "",
+    "at": "2026-11-02T02:28:04"
+  },
+  {
+    "action": "draft_handover",
+    "actor": "system",
+    "rule_hit": "pending_confirm",
+    "model_suggestion": "suggestion",
+    "human_override": "",
+    "signer": "",
+    "business_id": "CS-0002",
+    "detail": "",
+    "at": "2026-11-02T02:28:04"
+  },
+  {
+    "action": "run_result",
+    "actor": "system",
+    "rule_hit": "pending_confirm",
+    "model_suggestion": "degraded",
+    "human_override": "",
+    "signer": "",
+    "business_id": "CS-0002",
+    "detail": "",
+    "at": "2026-11-02T02:28:04"
+  },
+  {
+    "action": "confirm",
+    "actor": "yan-shou",
+    "rule_hit": "人工确认",
+    "model_suggestion": "",
+    "human_override": "approve",
+    "signer": "yan-shou",
+    "business_id": "CS-0002",
+    "detail": "",
+    "at": "2026-11-02T02:28:04"
+  }
+]

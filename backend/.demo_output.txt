@@ -1,0 +1,48 @@
+
+施工隐患与整改闭环 · 协同助手 —— 后端演示（模型模式：none）
+
+======================================================================
+路径 ① 正常：business_id = CS-0001
+----------------------------------------------------------------------
+状态(status): pending_confirm
+降级(degraded): True
+草稿(draft):
+   交接单号: HO-CS-0001 | 从 巡查员 → 整改协调员
+   · 隐患：楼梯口防护栏杆缺失（等级 中）
+   · 责任区域：A3
+   · 关联照片：P-0001,P-0002
+   · 当前状态：整改中（版本 v3）
+   备注: 以下为系统【建议(suggestion)】草稿，须人工确认后方可导出交接清单；不自动批准、不写业务系统。
+引用(citations): K23(复查), K41(照片元数据), K42(版本号), K26(交接), K27(超时升级)
+  步骤追踪：
+   - check_scope  (0.0 ms): {"in_scope": true, "business": {"business_id": "CS-0001", "title": "楼梯口防护栏杆缺失", …
+   - verify_version  (3.0 ms): {"status": "ok", "associate": {"matched": true, "insufficient": false, "matched_…
+   - draft_handover  (10.2 ms): {"handover_id": "HO-CS-0001", "business_id": "CS-0001", "from_role": "巡查员", "to_…
+======================================================================
+路径 ② 脏数据：business_id = CS-0007
+----------------------------------------------------------------------
+状态(status): need_human
+降级(degraded): True
+原因(reasons):
+   - 照片元数据缺失：P-0011,P-0012 缺时间或位置，不猜不补，进人工修复队列
+引用(citations): K23(复查), K41(照片元数据), K42(版本号)
+  步骤追踪：
+   - check_scope  (0.0 ms): {"in_scope": true, "business": {"business_id": "CS-0007", "title": "电梯井洞口防护不到位",…
+   - verify_version  (8.8 ms): {"status": "need_human", "associate": {"matched": false, "insufficient": true, "…
+======================================================================
+路径 ③ 冲突：business_id = CS-0013
+----------------------------------------------------------------------
+状态(status): conflict
+降级(degraded): True
+原因(reasons):
+   - 单据版本冲突：存在 alt_versions，两版并列、不合并（附总监裁定）
+两版并列(versions):
+   - {'version': 'v3', 'status': '整改中'}
+   - {'version': 'v2', 'status': '已销项'}
+引用(citations): K23(复查), K41(照片元数据), K42(版本号)
+  步骤追踪：
+   - check_scope  (0.0 ms): {"in_scope": true, "business": {"business_id": "CS-0013", "title": "消防通道堆放材料", "…
+   - verify_version  (7.8 ms): {"status": "conflict", "associate": {"matched": true, "insufficient": false, "ma…
+======================================================================
+演示结束。
+

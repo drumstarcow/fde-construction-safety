@@ -1,0 +1,51 @@
+[
+  {
+    "handover_id": "H-0001",
+    "business_id": "CS-0001",
+    "from_role": "巡查员",
+    "to_role": "整改协调员",
+    "unresolved_items": [],
+    "confirmed_by": "唐映秋",
+    "confirmed_at": "2026-10-20T16:30:00",
+    "note": "系统建议草稿，已人工确认导出。"
+  },
+  {
+    "handover_id": "H-0002",
+    "business_id": "CS-0002",
+    "from_role": "巡查员",
+    "to_role": "整改协调员",
+    "unresolved_items": [],
+    "confirmed_by": "",
+    "confirmed_at": "",
+    "note": "系统建议草稿，待人工确认。"
+  },
+  {
+    "handover_id": "HO-CS-0002",
+    "business_id": "CS-0002",
+    "from_role": "巡查员",
+    "to_role": "整改协调员",
+    "items": [
+      "隐患：配电箱未上锁（等级 高）",
+      "责任区域：A1",
+      "关联照片：P-0003",
+      "当前状态：整改中（版本 v3）"
+    ],
+    "unresolved_items": [],
+    "note": "以下为系统【建议(suggestion)】草稿，须人工确认后方可导出交接清单；不自动批准、不写业务系统。",
+    "citations": [
+      {
+        "id": "K26",
+        "title": "交接",
+        "source": "f23"
+      },
+      {
+        "id": "K27",
+        "title": "超时升级",
+        "source": "f25"
+      }
+    ],
+    "confirmed_by": "yan-shou",
+    "confirmed_at": "2026-11-02T02:28:04",
+    "action": "approve"
+  }
+]
