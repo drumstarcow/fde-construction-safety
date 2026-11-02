@@ -7,6 +7,13 @@
 - 方案设计文档更新评估结果：回放集扩至 100 笔，自动关联率 84%（阈值 ≥80%，meets:true）。
 - 九阶段报告导出并入库：`docs/报告/`（总报告 + 9 份分报告）。
 
+## 2026-11-02（二）
+- 目录严格对齐标准框架：`rules/ model/ orchestrator/` 收进 `core/`，`audit/` 收进 `utils/`；
+  新增 `main.py` 入口、`__init__.py`、`docs/design.md`、`docs/api.md`、`CONTRIBUTING.md`、
+  `scripts/build.sh`、`scripts/deploy.sh`、ISSUE 与 PR 模板。
+- 清理 `.pytest_cache/`、`__pycache__` 等不应入库的文件。
+- 复测：四个只读接口 + `/api/run` + `/api/search` 全部通过。
+
 ## 2026-11-01
 - 完成阶段一至阶段五的 FDE 训练记录，导出各阶段报告。
 - 后端交付：九个接口 + 三步编排 + 规则层 + 降级模型层 + 六字段审计。

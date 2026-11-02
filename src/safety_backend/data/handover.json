@@ -47,5 +47,33 @@
     "confirmed_by": "yan-shou",
     "confirmed_at": "2026-11-02T02:28:04",
     "action": "approve"
+  },
+  {
+    "handover_id": "HO-CS-0001",
+    "business_id": "CS-0001",
+    "from_role": "巡查员",
+    "to_role": "整改协调员",
+    "items": [
+      "隐患：楼梯口防护栏杆缺失（等级 中）",
+      "责任区域：A3",
+      "关联照片：P-0001,P-0002",
+      "当前状态：整改中（版本 v3）"
+    ],
+    "unresolved_items": [],
+    "note": "以下为系统【建议(suggestion)】草稿，须人工确认后方可导出交接清单；不自动批准、不写业务系统。",
+    "citations": [
+      {
+        "id": "K26",
+        "title": "交接",
+        "source": "f23"
+      },
+      {
+        "id": "K27",
+        "title": "超时升级",
+        "source": "f25"
+      }
+    ],
+    "confirmed_by": "",
+    "confirmed_at": ""
   }
 ]

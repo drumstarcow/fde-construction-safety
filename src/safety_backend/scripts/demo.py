@@ -14,9 +14,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, "kb"))
 
-import audit.store as audit
-from model.wrapper import ModelWrapper
-from orchestrator import graph
+import utils.audit.store as audit
+from core.model.wrapper import ModelWrapper
+from core.orchestrator import graph
 
 
 def build_ctx():

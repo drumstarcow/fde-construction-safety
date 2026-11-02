@@ -11,7 +11,7 @@ import threading
 import datetime
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
-AUDIT_PATH = os.path.join(_HERE, "..", "data", "audit.json")
+AUDIT_PATH = os.path.join(_HERE, "..", "..", "data", "audit.json")
 _lock = threading.Lock()
 
 

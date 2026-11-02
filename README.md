@@ -35,22 +35,33 @@
 ├── LICENSE                   MIT
 ├── .gitignore
 ├── CHANGELOG.md              更新记录
+├── CONTRIBUTING.md           贡献约定
 ├── requirements.txt          依赖（Python 3.11+）
 ├── config/default.yaml       非机密默认配置
+│
 ├── src/safety_backend/       源代码主目录
-│   ├── app.py                九个接口（FastAPI）
-│   ├── rules/                关联 / 去重 / 版本校验
-│   ├── model/                模型封装与降级
-│   ├── orchestrator/         三步编排
-│   ├── audit/                六字段审计
+│   ├── main.py               程序入口（python -m safety_backend.main）
+│   ├── app.py                11 个接口（FastAPI）
+│   ├── core/                 核心业务逻辑
+│   │   ├── rules/            关联 / 去重 / 版本校验（确定性）
+│   │   ├── model/            模型封装与降级
+│   │   └── orchestrator/     三步编排
+│   ├── utils/                通用工具
+│   │   └── audit/            六字段审计读写
 │   ├── kb/                   知识库 49 条 + 图谱 278 关系 + 检索
 │   └── data/                 合成样本（100 笔业务 / 197 张照片）
-├── docs/                     设计与交付文档
+│
+├── docs/                     design.md / api.md + 01~09 全流程文档
+├── web/index.html            单文件前端（图谱 / 问答 / 编排）
 ├── examples/demo.py          三条路径的演示脚本
 ├── tests/test_smoke.py       冒烟测试（不需要 key）
-├── scripts/                  run.sh / check.sh
-└── .github/workflows/ci.yml  提交即跑语法检查与冒烟测试
+├── scripts/                  run.sh / build.sh / deploy.sh / check.sh
+└── .github/                  workflows/ci.yml + ISSUE 与 PR 模板
 ```
+
+**为什么 core 里再分三块**：规则、模型、编排的失败模式完全不同——规则出错是「多核对一次」，
+模型出错是「给错建议」，编排出错是「流程走错步」。放在同一个包里也要分目录，否则说不清
+一条结论是谁给的。
 
 ## 环境要求
 

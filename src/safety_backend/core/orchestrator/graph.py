@@ -12,14 +12,14 @@ import time
 import json
 
 # 让本模块能 import kb/kb_search 与 rules/model 包
-_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 sys.path.insert(0, os.path.abspath(_ROOT))
 _KB_DIR = os.path.join(os.path.abspath(_ROOT), "kb")
 sys.path.insert(0, os.path.abspath(_KB_DIR))
 import kb_search  # 官方检索（BM25 + 字符二元组 + 图谱一跳扩展）
-from rules import associate as assoc_mod
-from rules import dedup as dedup_mod
-from rules import version as ver_mod
+from core.rules import associate as assoc_mod
+from core.rules import dedup as dedup_mod
+from core.rules import version as ver_mod
 
 # 知识库按 id 取条目（用于 K23/K41/K42/K26/K27 引用）
 _KB_PATH = os.path.join(os.path.abspath(_KB_DIR), "knowledge.json")
