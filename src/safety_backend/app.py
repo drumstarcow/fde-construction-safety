@@ -345,3 +345,56 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="127.0.0.1", port=8000, reload=False)
+
+
+# ---------------- 知识库与图谱（供前端可视化） ----------------
+KB_DIR = os.path.join(ROOT, "kb")
+
+
+@app.get("/api/kb")
+def list_kb():
+    """返回 49 条知识条目（含 id / 主题 / 内容 / 来源 / 关联标签）。"""
+    with open(os.path.join(KB_DIR, "knowledge.json"), encoding="utf-8") as f:
+        items = json.load(f)
+    return {"total": len(items), "items": items}
+
+
+@app.get("/api/graph")
+def get_graph(layers: int = 1, focus: str = ""):
+    """返回知识图谱节点与关系，供前端画图。
+
+    layers: 关联层数（1=只返回与 focus 一跳相连的子图；0 或未给 focus 时返回全图）
+    focus:  聚焦的条目 id，例如 K22
+    """
+    with open(os.path.join(KB_DIR, "graph.json"), encoding="utf-8") as f:
+        g = json.load(f)
+
+    nodes, edges = g.get("nodes", []), g.get("edges", [])
+    if not focus or layers <= 0:
+        return {"total_nodes": len(nodes), "total_edges": len(edges),
+                "nodes": nodes, "edges": edges}
+
+    # 从 focus 出发做 BFS，最多 layers 跳
+    adj = {}
+    for e in edges:
+        adj.setdefault(e["from"], []).append(e["to"])
+        adj.setdefault(e["to"], []).append(e["from"])
+
+    seen, frontier = {focus}, [focus]
+    for _ in range(layers):
+        nxt = []
+        for n in frontier:
+            for m in adj.get(n, []):
+                if m not in seen:
+                    seen.add(m)
+                    nxt.append(m)
+        frontier = nxt
+        if not frontier:
+            break
+
+    sub_nodes = [n for n in nodes if n.get("id") in seen]
+    sub_edges = [e for e in edges if e.get("from") in seen and e.get("to") in seen]
+    return {"focus": focus, "layers": layers,
+            "total_nodes": len(sub_nodes), "total_edges": len(sub_edges),
+            "nodes": sub_nodes, "edges": sub_edges}
+
