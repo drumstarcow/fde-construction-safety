@@ -1,0 +1,19 @@
+# 非机密默认配置（真值走环境变量）
+server:
+  host: 127.0.0.1
+  port: 8000
+
+model:
+  provider: cloud          # cloud | local | none
+  cloud_base_url: https://api.deepseek.com/v1
+  cloud_model: deepseek-chat
+  timeout_seconds: 15
+  fallback: rule_only       # 模型不可用时降级
+
+rules:
+  photo_time_tolerance_minutes: 5
+  duplicate_window_hours: 24
+  conflict_policy: show_both   # 版本冲突并列展示，不合并
+
+audit:
+  fields: [action, actor, rule_hit, model_suggestion, human_override, signer]

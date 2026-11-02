@@ -1,0 +1,20 @@
+# 环境与依赖
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pylibs/
+
+# 密钥（绝不提交）
+.env
+*.env
+!.env.example
+
+# 运行产物
+data/audit.json
+outputs/
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
