@@ -20,6 +20,7 @@ import json
 import time
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -117,6 +118,12 @@ class SearchReq(BaseModel):
 
 # ---------------- 应用 ----------------
 app = FastAPI(title="施工隐患与整改闭环 · 协同助手后端", version="v3-backend")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/api/health")
