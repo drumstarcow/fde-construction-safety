@@ -29,8 +29,8 @@ svg#g{width:100%;height:460px;background:#fff;border:1px solid #eef1f4;border-ra
 
 <div class="panel on" id="p-g">
   <div class="row">
-    <span class="hint">后端：</span><input id="base" value="http://127.0.0.1:8000" style="width:230px">
-    <button onclick="loadGraph()">加载全图</button>
+    <span class="hint">后端：</span><input id="base" value="http://127.0.0.1:8010" onchange="health();loadGraph();loadBiz()" style="width:230px">
+    <button onclick="health();loadGraph()">加载全图</button>
     <input id="focus" placeholder="聚焦条目，如 K22" style="width:150px">
     <select id="layers"><option value="1">一跳</option><option value="2">两跳</option><option value="3">三跳</option></select>
     <button class="g" onclick="focusGraph()">按关联层数</button>
