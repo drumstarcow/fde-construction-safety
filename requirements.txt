@@ -1,5 +1,9 @@
 # 施工隐患与整改闭环 · 协同助手 —— 后端运行依赖
-# 本环境已验证可跑：Python 3（托管虚拟环境）
+# 已验证：Python 3.11+（云端 3.12、Windows 3.14 均可跑）
 fastapi==0.142.4
 uvicorn==0.53.0
 pydantic==2.13.5
+
+# 仅测试需要（tests/ 里的 TestClient）
+httpx
+pytest

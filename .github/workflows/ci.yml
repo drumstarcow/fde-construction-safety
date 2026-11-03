@@ -6,16 +6,16 @@ on:
   pull_request:
 
 jobs:
-  smoke:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: 语法检查
-        run: python -m compileall -q src/safety_backend
-      - name: 依赖
-        run: pip install pytest
-      - name: 冒烟测试
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+      - name: 构建检查（语法 + AST）
+        run: bash scripts/build.sh
+      - name: 测试（静态数据 + 接口）
         run: python -m pytest tests -q

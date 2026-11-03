@@ -75,5 +75,16 @@
     "business_id": "CS-0001",
     "detail": "",
     "at": "2026-11-02T20:30:34"
+  },
+  {
+    "action": "check_scope",
+    "actor": "system",
+    "rule_hit": "out_of_scope",
+    "model_suggestion": "",
+    "human_override": "rejected_403",
+    "signer": "",
+    "business_id": "NOT-AUTH-999",
+    "detail": "",
+    "at": "2026-11-03T10:30:27"
   }
 ]
