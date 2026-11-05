@@ -1,0 +1,121 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><title>协同助手 · 在线版</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:"Microsoft YaHei",system-ui,sans-serif;background:#f7f8fa;color:#1f2933;font-size:14px}
+.top{height:58px;background:#fff;border-bottom:1px solid #e3e6ea;display:flex;align-items:center;padding:0 20px;gap:10px}
+.logo{width:28px;height:28px;border-radius:50%;background:#1f4e79;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px}
+.t{font-weight:700}
+.badge{margin-left:auto;font-size:12px;color:#1f4e79;background:#eef4fb;border:1px solid #c9dcf0;border-radius:14px;padding:4px 12px}
+.tabs{display:flex;gap:6px;padding:12px 20px 0}
+.tab{padding:8px 16px;border-radius:8px 8px 0 0;background:#eef1f5;color:#5b6470;cursor:pointer;font-size:13px}
+.tab.on{background:#fff;color:#1f4e79;font-weight:700;border:1px solid #e3e6ea;border-bottom-color:#fff}
+.panel{display:none;padding:16px 20px}.panel.on{display:block}
+.card{background:#fff;border:1px solid #e3e6ea;border-radius:10px;padding:14px}
+.row{display:flex;gap:10px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+button{height:32px;border:0;border-radius:7px;background:#1f4e79;color:#fff;font-size:13px;padding:0 14px;cursor:pointer;font-family:inherit}
+button.g{background:#eef1f5;color:#3b4551}
+input,select{height:32px;border:1px solid #dfe3e8;border-radius:7px;padding:0 10px;font-family:inherit;font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+pre{background:#f5f6f8;border-radius:8px;padding:10px;font-size:12px;overflow:auto;max-height:320px;margin:0}
+svg#g{width:100%;height:460px;background:#fff;border:1px solid #eef1f4;border-radius:8px}
+.item{border:1px solid #eceff2;background:#fafbfc;border-radius:8px;padding:8px 10px;margin-bottom:6px;font-size:12.5px}
+.hint{color:#8a9199;font-size:12px}
+</style></head><body>
+<div class="top"><div class="logo">安</div><div class="t">施工隐患与整改闭环 · 协同助手</div><div class="badge" id="st">连接中…</div></div>
+<div class="tabs">
+  <div class="tab on" data-p="g">知识与图谱</div>
+  <div class="tab" data-p="q">带依据问答</div>
+  <div class="tab" data-p="b">业务编排</div>
+</div>
+
+<div class="panel on" id="p-g">
+  <div class="row">
+    <span class="hint">后端：</span><input id="base" value="http://127.0.0.1:8010" onchange="health();loadGraph();loadBiz()" style="width:230px">
+    <button onclick="health();loadGraph()">加载全图</button>
+    <input id="focus" placeholder="聚焦条目，如 K22" style="width:150px">
+    <select id="layers"><option value="1">一跳</option><option value="2">两跳</option><option value="3">三跳</option></select>
+    <button class="g" onclick="focusGraph()">按关联层数</button>
+    <span class="hint" id="ginfo"></span>
+  </div>
+  <div class="grid">
+    <div class="card"><svg id="g"></svg></div>
+    <div class="card"><div style="font-weight:700;margin-bottom:8px">节点详情</div><pre id="nd">点左边的圆点看条目</pre></div>
+  </div>
+</div>
+
+<div class="panel" id="p-q">
+  <div class="row"><input id="q" placeholder="问一句，例如：交接要包含什么才算完成" style="width:380px"><button onclick="ask()">提问</button></div>
+  <div class="card"><div id="ans" class="hint">回答会出现在这里，末尾附引用来源。</div><div id="cite" style="color:#1f4e79;font-size:12px;margin-top:8px"></div></div>
+</div>
+
+<div class="panel" id="p-b">
+  <div class="row"><select id="biz"></select><button onclick="runOne()">跑一笔业务</button><button class="g" onclick="loadBiz()">刷新业务列表</button></div>
+  <div class="card"><pre id="runBox">选一笔业务，点「跑一笔业务」。</pre></div>
+</div>
+
+<script>
+const B=()=>document.getElementById('base').value.replace(/\/$/,'');
+const api=async(p,o)=>{const r=await fetch(B()+p,o);if(!r.ok)throw new Error(p+' '+r.status);return r.json()};
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));
+  t.classList.add('on');document.getElementById('p-'+t.dataset.p).classList.add('on');
+});
+async function health(){try{const d=await api('/api/health');document.getElementById('st').textContent='模型：'+(d.degraded?'未接（规则模式）':'已接')}catch(e){document.getElementById('st').textContent='连不上后端'}}
+let G={nodes:[],edges:[]};
+async function loadGraph(){
+  try{
+    const d=await api('/api/graph'); G=d; draw(); 
+    document.getElementById('ginfo').textContent='全图 '+d.total_nodes+' 节点 / '+d.total_edges+' 关系';
+  }catch(e){document.getElementById('ginfo').textContent='出错：'+e.message}
+}
+async function focusGraph(){
+  const f=document.getElementById('focus').value.trim(); if(!f)return loadGraph();
+  const l=document.getElementById('layers').value;
+  try{const d=await api('/api/graph?focus='+encodeURIComponent(f)+'&layers='+l); G=d; draw();
+    document.getElementById('ginfo').textContent='以 '+f+' 为中心 '+l+' 跳：'+d.total_nodes+' 节点 / '+d.total_edges+' 关系';
+  }catch(e){document.getElementById('ginfo').textContent='出错：'+e.message}
+}
+const TC={'条目':'#1f4e79','主题':'#8fa3b8','动作':'#2e8b57','隐患':'#c0392b','角色':'#a8661f','指标':'#6b4fa0','步骤':'#5b6470','红线':'#c0392b','责任':'#a8661f'};
+function draw(){
+  const svg=document.getElementById('g'); const w=svg.clientWidth||560,h=460;
+  const ns=G.nodes.slice(0,120), cx=w/2, cy=h/2, pos={};
+  ns.forEach((n,i)=>{const a=2*Math.PI*i/ns.length, r=90+(i%5)*38; pos[n.id]=[cx+Math.cos(a)*r*1.3, cy+Math.sin(a)*r*0.9]});
+  let s='';
+  G.edges.forEach(e=>{if(pos[e.from]&&pos[e.to])s+='<line x1="'+pos[e.from][0]+'" y1="'+pos[e.from][1]+'" x2="'+pos[e.to][0]+'" y2="'+pos[e.to][1]+'" stroke="#e2e8f0" stroke-width="0.8"/>'});
+  ns.forEach(n=>{const p=pos[n.id];
+    s+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="5" fill="'+(TC[n.type]||'#8fa3b8')+'" style="cursor:pointer" onclick="pick(\''+n.id+'\')"><title>'+n.label+'</title></circle>'});
+  svg.innerHTML=s;
+}
+function pick(id){
+  const n=G.nodes.find(x=>x.id===id)||{};
+  const rel=G.edges.filter(e=>e.from===id||e.to===id).slice(0,10).map(e=>{
+    const o=e.from===id?e.to:e.from; const on=G.nodes.find(x=>x.id===o)||{};
+    return ' - '+(e.rel||'')+' → '+(on.label||o);
+  });
+  document.getElementById('nd').textContent=JSON.stringify({id:n.id,标题:n.label,类型:n.type,主题:n.topic,来源:n.source},null,1)+'\n\n关联：\n'+(rel.join('\n')||'（无）');
+  document.getElementById('focus').value=id;
+}
+async function ask(){
+  const q=document.getElementById('q').value.trim()||'交接要包含什么才算完成';
+  try{
+    const d=await api('/api/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({q})});
+    const rs=d.results||[];
+    document.getElementById('ans').innerHTML = rs.length
+      ? '<b>问：'+q+'</b><br>'+rs[0].content+'<br><span class="hint">依据：'+rs[0].title+'（'+rs[0].id+'），来源 '+rs[0].source+'</span>'
+      : '知识库里没有；不编。';
+    document.getElementById('cite').textContent = rs.length? '引用：'+rs.map(x=>x.id+'（'+x.source+'）').join(' · ') : '';
+  }catch(e){document.getElementById('ans').textContent='出错：'+e.message}
+}
+async function loadBiz(){
+  try{const d=await api('/api/business');const s=document.getElementById('biz');s.innerHTML='';
+    (Array.isArray(d)?d:[]).forEach(b=>{const o=document.createElement('option');o.value=b.business_id;o.textContent=b.business_id+' · '+(b.area_code||'');s.appendChild(o)});
+  }catch(e){document.getElementById('runBox').textContent='出错：'+e.message}
+}
+async function runOne(){
+  const id=document.getElementById('biz').value;
+  try{const d=await api('/api/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({business_id:id})});
+    document.getElementById('runBox').textContent=JSON.stringify(d,null,1);
+  }catch(e){document.getElementById('runBox').textContent='出错：'+e.message+'\n（越权编号会返回 403，这是预期的）'}
+}
+health();loadGraph();loadBiz();
+</script></body></html>
